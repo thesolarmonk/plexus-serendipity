@@ -1,0 +1,10 @@
+node_modules
+
+TODO.md
+
+.env
+
+dist/*
+build/*
+
+.DS_Store

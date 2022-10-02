@@ -1,0 +1,63 @@
+{
+  "name": "plexus-serendipity",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "main": "",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/main.js",
+    "lint": "eslint . ; exit 0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bfj": "^7.0.2",
+    "cli-progress": "^3.11.2",
+    "compute-cosine-similarity": "^1.0.0",
+    "dotenv": "^16.0.3",
+    "openai-api": "^1.3.1",
+    "timsort": "^0.3.0",
+    "twitter-api-sdk": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  },
+  "nodemonConfig": {
+    "events": {
+      "start": "cls || clear"
+    },
+    "ignore": [
+      "node_modules/*"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb-base",
+      "plugin:prettier/recommended",
+      "plugin:import/warnings"
+    ],
+    "plugins": [
+      "prettier",
+      "security",
+      "import"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "semi": true
+  }
+}
